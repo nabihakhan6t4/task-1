@@ -1,0 +1,73 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Type Selector */
+h2 {
+    color: blue;
+}
+
+/* Class Selector */
+.class-selector {
+    color: green;
+    font-weight: bold;
+}
+
+/* ID Selector */
+#id-selector {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Attribute Selector */
+input[placeholder] {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+/* Grouping Selectors */
+.grouping {
+    background-color: lightgray;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Combinators */
+.combinators > p {
+    color: purple;
+}
+
+.combinators + span {
+    font-style: italic;
+}
+
+.combinators ~ p {
+    font-size: 1.2em;
+}
+
+/* Pseudo-classes */
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+input:focus {
+    border-color: blue;
+    outline: none;
+}
+
+/* Pseudo-elements */
+.pseudo-element::after {
+    content: " - This is added using a pseudo-element.";
+    color: gray;
+    font-style: italic;
+}
+
+/* Hover Example */
+.hover-example li:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
